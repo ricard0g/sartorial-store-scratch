@@ -4,6 +4,9 @@
   "description": "This store is created completely from scratch without using any pre-built Shopify theme.",
   "main": "vite.config.js",
   "scripts": {
+    "build": "vite build",
+    "dev": "shopify theme dev -s sartorial-store",
+    "tw": "npx tailwindcss -i ./assets/app-tailwind.css -o ./assets/app.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
