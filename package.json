@@ -1,0 +1,17 @@
+{
+  "name": "sartorial-theme-scratch",
+  "version": "1.0.0",
+  "description": "This store is created completely from scratch without using any pre-built Shopify theme.",
+  "main": "vite.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.4.1",
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "tailwindcss": "^3.4.15"
+  }
+}
