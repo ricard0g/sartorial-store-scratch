@@ -1,0 +1,50 @@
+{% if section.settings.show_announcement_bar %}
+    <section style="background-color: {{ section.settings.background_color }}" class="tw-text-center">
+        
+    </section>
+{% endif %}
+
+{% schema %}
+{
+    "name": "Announcement Bar",
+    "tag": "section",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "show_announcement_bar",
+            "label": "Show Announcement Bar",
+            "default": true
+        },
+        {
+            "type": "color_background",
+            "id": "background_color",
+            "label": "Background Color",
+            "default": "#242424"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "announcement_text",
+            "name": "Announcement Text",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "announcement_text",
+                    "label": "Announcement Text",
+                    "default": "Welcome to our Store!"
+                },
+                {
+                    "type": "url",
+                    "id": "url",
+                    "label": "Link",
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Announcement Bar"
+        }
+    ]
+}
+{% endschema %}
